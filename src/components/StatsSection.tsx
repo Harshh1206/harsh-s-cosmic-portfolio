@@ -15,12 +15,21 @@ export default function StatsSection() {
           <div className="glass-card p-6 gradient-border">
             <h3 className="font-mono text-sm text-neon-blue mb-4">GitHub</h3>
             <div className="space-y-4">
+              {/* Current stats summary */}
               <img
                 src="https://github-readme-stats.vercel.app/api?username=Harshh1206&show_icons=true&theme=transparent&hide_border=true&title_color=4f7df9&icon_color=8b5cf6&text_color=94a3b8&bg_color=00000000"
                 alt="GitHub Stats"
                 className="w-full rounded-lg"
                 loading="lazy"
               />
+              {/* Contribution graph (green boxes) */}
+              <img
+                src="https://ghchart.rshah.org/4f7df9/Harshh1206"
+                alt="GitHub Contribution Graph"
+                className="w-full rounded-lg"
+                loading="lazy"
+              />
+              {/* Streak stats */}
               <img
                 src="https://github-readme-streak-stats.herokuapp.com/?user=Harshh1206&theme=transparent&hide_border=true&ring=4f7df9&fire=8b5cf6&currStreakLabel=94a3b8&sideLabels=94a3b8&dates=64748b&stroke=1e293b&background=00000000"
                 alt="GitHub Streak"

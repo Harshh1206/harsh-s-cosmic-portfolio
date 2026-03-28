@@ -1,4 +1,5 @@
 import { Suspense, lazy } from 'react';
+import { Download } from 'lucide-react';
 import FadeInSection from './FadeInSection';
 
 const ParticleBackground = lazy(() => import('./ParticleBackground'));
@@ -44,11 +45,18 @@ export default function HeroSection() {
             >
               Contact Me
             </a>
+            <a
+              href="/Harsh_Konde_CV.pdf"
+              download="Harsh_Konde_Resume.pdf"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-primary-foreground font-medium hover:opacity-90 transition-opacity"
+            >
+              <Download size={16} />
+              Download Resume
+            </a>
           </div>
         </FadeInSection>
       </div>
 
-      {/* Gradient overlay at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
